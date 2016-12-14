@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INDEX</title>
+</head>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Aref+Ruqaa);
+        @import url(http://fonts.googleapis.com/earlyaccess/cwtexkai.css);
+        *{
+         box-sizing: border-box;  
+        font-family: Roboto,"Noto San TC",sans-serif;
+        }
+/*        CSS RESET*/
+        body,h1,h2,h3,h4,h5,h6,p{
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5em;
+        }
+        img {
+            width: 100%;
+            vertical-align: top;
+            border: 0;
+        }
+        h1{
+            font-size: 20px;
+        }
+        p{
+            font-size: 14px;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .full-width{
+            width: 100%;
+        }
+        .fixed-width{
+            width: 1200px;
+            margin: auto;
+        }
+        .col-3{
+            float: left;
+            width: 380px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .col-4{
+             float: left;
+            width: 280px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        nav{
+            position: fixed;
+        }
+        nav .logo{
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
+        nav .menu{
+            float: right;
+        }
+        nav .menu ul{
+            margin: 0;
+            padding: 0;
+        }
+        nav .menu li{
+            float: left;
+            list-style-type: none;
+        }
+        nav .menu a{
+            display: block;
+            padding-left: 15px;
+            padding-right: 15px;
+            height: 100px;
+            line-height: 100px;
+            color: snow;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        header{
+            background-image: url(iamges/polar%20bear.jpg);
+/*            background-size: auto;*/
+            padding-top: 250px;
+            padding-bottom: 250px;
+            text-align: center;
+        }
+        header::before{
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            height: 100px;
+        }
+        header .content{
+            font-size: 16px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        #about{
+            padding-top: 100px;
+            padding-bottom: 100px;
+            background-color:lightblue;
+        }
+        #about .col-3{
+            text-align: center;
+            padding: 20px;
+        }
+        #about h3{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        #about p{
+            font-size: 14px;
+            font-variant-east-asian: normal;
+            color: blueviolet;
+        }
+        #about .col-3:nth-of-type(1) .icon{
+            color:crimson;
+        }
+        #about .col-3:nth-of-type(2) .icon{
+            color:gold;
+        }
+        #about .col-3:nth-of-type(3) .icon{
+            color:purple;
+        }
+        #ad{
+            background-image: url(iamges/polar%20sea.jpg);
+            background-color: lightblue;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            text-align: center;
+            color: slateblue;
+        }
+        #ad h2{
+            color: yellow;
+        }
+        #ad p{
+            margin-top: 15px;
+            margin-bottom: 15px;
+            color:#f11;
+        }
+        #profile{
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        #profile div:nth-of-type(1){ 
+            text-align: center;
+        }
+        #profile div:nth-of-type(2) .col-3>p{
+/*            padding: 20px 20px 40px 15px;*/
+            text-align: center;
+        }
+        #profile .detail{
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 0;
+        }
+        #profile .detail::before{
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+        }
+        #profile .thumb{
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+        }
+        #profile .position{
+            display: inline-block;
+            vertical-align: middle;
+             font-size: 16px;
+            text-align: left;
+        }
+        #blog{
+            background-color: orange;
+            padding-top: 30px;
+            padding-bottom: 200px;
+        }
+        #blog .gallery{
+            position: relative;
+        }
+        #blog .gallery+p{
+            margin-top: 30px;
+            color:aqua;
+            text-align: center;
+        }
+        #blog .gallery .date{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: rgba(0,0,0,.8);
+            color:white;
+            top: 0;
+            left: 10px;
+            text-align: center;
+            font-size: 12px;
+        }
+        .title{
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 50px;
+        }
+        .title h2{
+            color: midnightblue;
+        }
+        .titlt p{
+            color: brown;
+            font-size: 14px;
+            line-height: 25px;
+        }
+        footer .logo {
+            width: 100px;
+            height: 70px;
+            background-color:deepskyblue;
+            float: left;
+        }
+        footer .copyright {
+            line-height: 70px;
+            float: left;
+            font-size: 14px;
+            margin-left: 30px;
+        }
+        footer .menu {
+            float: right;
+            
+        }
+        footer .menu a {
+            line-height: 70px;
+            text-decoration: none;
+            color:darkblue;
+            margin-left: 20px;
+        }
+    </style>
+<body>
+    <nav class="fixed-width clearfix">
+        <div class="logo"></div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Journal</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="full width">
+        <div class="content">
+            <h1>熊~熊~</h1>
+            <p>小不點從北海道買來的北極熊超可愛。</p>
+        </div>
+    </header>
+    <div id="about" class="full-width clearfix">
+        <div class="fixed-width">
+            <div class="col-3">    
+                <div class="icon"><span class="fa fa-heart fa-2x"></span></div>
+            <h3>What a cute bear!</h3>
+        <p>哈哈哈 為什麼不能QQ不認同別人本來就是每個人都可以有的權利跟想法啊</p>
+    </div>
+       <div class="col-3">    
+        <div class="icon"><span class="fa fa-key fa-2x"></span></div>
+            <h3>What a cute bear!</h3>
+               <p>哈哈哈 為什麼不能QQ不認同別人本來就是每個人都可以有的權利跟想法啊</p>
+          </div>
+       <div class="col-3">    
+         <div class="icon"><span class="fa fa-glass fa-2x"></span></div>
+            <h3>What a cute bear!</h3>
+               <p>哈哈哈 為什麼不能QQ不認同別人本來就是每個人都可以有的權利跟想法啊</p>
+          </div>
+        </div>
+    </div>
+    <div id="ad"  class="full-with clearfix">
+      <div class="content">
+          <h2>熊熊故鄉?</h2>
+          <p>我去年寒假去過喔^^</p>
+          <div><span class="fa fa-map fa-3x"></span></div>
+        </div>
+      </div>
+    <div id="profile" class="full-width clearfix">
+        <div class="fixed-width title">
+            <h2>Zac好帥</h2>
+             <p>蛋餅好吃~~</p>
+        </div>
+            <div class="fixed-width">
+            <div class="col-3">
+                <p>網頁語法QQ</p>
+                <div class="detail">
+                <div class="thumb"><span class="fa fa-rss fa-3x"></span></div>
+<!--                <img src="iamges/white%20bear.jpg" alt="">-->
+                <div class="position">
+                    <h3>嘿~嘿~</h3>
+                    <p>XDDD</p>
+                </div>
+            </div>
+         </div>
+      </div>
+        <div class="fixed-width">
+            <div class="col-3">
+                <p>網頁語法QQ</p>
+                <div class="detail">
+                <div class="thumb"><span class="fa fa-rss fa-3x"></span></div>
+<!--                <img src="iamges/white%20bear.jpg" alt="">-->
+                <div class="position">
+                    <h3>嘿~嘿~</h3>
+                    <p>XDDD</p>
+                </div>
+            </div>
+         </div>
+      </div>
+        <div class="fixed-width">
+            <div class="col-3">
+                <p>網頁語法QQ</p>
+                <div class="detail">
+                <div class="thumb"><span class="fa fa-rss fa-3x"></span></div>
+<!--                <img src="iamges/white%20bear.jpg" alt="">-->
+                <div class="position">
+                    <h3>嘿~嘿~</h3>
+                    <p>XDDD</p>
+                </div>
+            </div>
+         </div>
+      </div>
+    </div>
+    <div id="blog">
+        <div class="fixed-width title">
+            <h2>藝文週</h2>
+            <p>12/22搓湯圓</p>
+    </div>
+        <div class="fixed-width">
+            <div class="col-4">
+            <div class="gallery">
+                <div class="date">22<br>Dec.</div>
+         <img src="iamges/polar%20bear.jpg" alt="">
+        </div>
+        <p>我12/29會來打雲山盃</p>
+            </div>
+             <div class="col-4">
+            <div class="gallery">
+                <div class="date">24<br>Dec.</div>
+         <img src="iamges/white%20bear.jpg" alt="">
+        </div>
+        <p>我12/29會來打雲山盃</p>
+           </div>
+            <div class="col-4">
+            <div class="gallery">
+                <div class="date">25<br>Dec.</div>
+         <img src="iamges/cute%20bear.jpg" alt="">
+        </div>
+        <p>我12/29會來打雲山盃</p>
+           </div>
+            <div class="col-4">
+            <div class="gallery">
+                <div class="date">29<br>Dec.</div>
+         <img src="iamges/sleep%20bear.jpg" alt="">
+        </div>
+        <p>我12/29會來打雲山盃</p>
+           </div>
+    <footer class="full-width">
+        <div class="fixed-width">
+            <div class="logo"></div>
+            <div class="copyright">
+                &copy; LCC Design All Rights Reserved - 2016
+            </div>
+            <div class="menu">
+                <a href="#">About</a>
+                <a href="#">FAQ</a>
+                <a href="#">Service</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
